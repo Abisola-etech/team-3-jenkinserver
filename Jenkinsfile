@@ -12,7 +12,7 @@ pipeline{
 			}
 		}
 		stage('3-make another left'){
-			step{
+			steps{
 				echo "walk..."
 			}
 		}
