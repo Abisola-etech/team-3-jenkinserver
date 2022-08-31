@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
 	agent any
 	stages{
 		stage('1-make a left'){
@@ -27,5 +27,27 @@ pipeline{
                
 			}
 		}
-	}
-}
+        stages {
+            stage('5-Phil'){
+                steps {
+                    sh 'ps -ef'
+                    sh 'sudo systemctl status jenkins'
+                }
+            }
+            stage('6-processes running on the system-Abisola'){
+			    steps{
+				    sh 'ps -ef'
+				    sh 'sudo systemctl status jenkins'
+			    }
+		    }
+            stage ('7 christiane'){
+                steps{
+                    sh 'ps -ef'
+                    sh 'sudo systemctl status jenkins'
+                }
+            }
+
+       
+        }
+    }
+}   
