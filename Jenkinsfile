@@ -27,8 +27,7 @@ pipeline {
                
 			}
 		}
-        stages {
-            stage('5-Phil'){
+               stage('5-Phil'){
                 steps {
                     sh 'ps -ef'
                     sh 'sudo systemctl status jenkins'
